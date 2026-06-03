@@ -67,12 +67,12 @@
             <span>Março/2024</span>
           </article>
           <article>
-            <img src="<?php echo esc_url($tmpl_dir . '/assets/images/obra-ccau-01.png'); ?>" alt="Fundação em andamento">
+            <img src="<?php echo esc_url($tmpl_dir . '/assets/images/obra-ccau-02.jpg'); ?>" alt="Fundação em andamento">
             <strong>Fundação em andamento</strong>
             <span>Maio/2024</span>
           </article>
           <article>
-            <img src="<?php echo esc_url($tmpl_dir . '/assets/images/obra-ccau-01.png'); ?>" alt="Estrutura em construção">
+            <img src="<?php echo esc_url($tmpl_dir . '/assets/images/obra-ccau-03.jpg'); ?>" alt="Estrutura em construção">
             <strong>Estrutura em construção</strong>
             <span>Maio/2024</span>
           </article>
