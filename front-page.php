@@ -455,39 +455,4 @@
   </div>
 </section>
 
-<!-- BARRA DE PATROCÍNIO -->
-<section style="padding:48px 0;background:var(--fundo);border-top:1px solid #f0ece4">
-  <div class="container">
-    <div style="display:flex;flex-direction:column;align-items:center;gap:24px">
-      <div style="display:flex;gap:48px;align-items:center;flex-wrap:wrap;justify-content:center">
-        <div style="text-align:center">
-          <div style="font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--cinza);margin-bottom:16px">Patrocínio</div>
-          <div style="display:flex;gap:32px;align-items:center;flex-wrap:wrap;justify-content:center">
-            <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
-              <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:14px;color:#005ca0;border:2px solid #005ca0;padding:8px 16px;border-radius:8px;letter-spacing:0.04em">Lei Rouanet</div>
-              <div style="font-size:10px;color:var(--cinza)">PRONAC 24.6131</div>
-            </div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
-              <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:18px;color:#00a0d2;letter-spacing:0.04em">ENGIE</div>
-              <div style="font-size:10px;color:var(--cinza)">Brasil</div>
-            </div>
-          </div>
-        </div>
-        <div style="width:1px;height:60px;background:#e5e7eb"></div>
-        <div style="text-align:center">
-          <div style="font-size:10px;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--cinza);margin-bottom:16px">Realização</div>
-          <div style="display:flex;gap:32px;align-items:center;flex-wrap:wrap;justify-content:center">
-            <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:16px;color:var(--verde)">CCAAU</div>
-            <div style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:13px;color:#444;text-align:center;line-height:1.3">Ministério<br>da Cultura</div>
-            <div style="font-family:'Montserrat',sans-serif;font-weight:800;font-size:13px;color:#071d41;text-align:center;line-height:1.3">Governo<br>do Brasil</div>
-          </div>
-        </div>
-      </div>
-      <div style="font-size:11px;color:var(--cinza);text-align:center;max-width:500px;line-height:1.6">
-        "Ministério da Cultura e ENGIE apresentam" — Projeto realizado com recursos da Lei Federal de Incentivo à Cultura (Lei Rouanet).
-      </div>
-    </div>
-  </div>
-</section>
-
 <?php get_footer(); ?>
