@@ -29,7 +29,7 @@
 <!-- NAV -->
 <nav id="nav">
   <a href="<?php echo home_url('/'); ?>" class="nav-logo">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-transparente.png" alt="CCAAU" style="background:#1E4D3B;border-radius:50%;padding:2px;border:none !important">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo-cacto.png" alt="CCAAU">
     <div>
       <div class="nav-logo-name">CCAAU</div>
       <div class="nav-logo-sub">Centro Comunitário de Apoio e Articulação de Umburanas</div>
@@ -43,7 +43,8 @@
     <li><a href="<?php echo home_url('/transparencia'); ?>" <?php if(is_page('transparencia')) echo 'class="ativo"'; ?>>Transparência</a></li>
     <li><a href="<?php echo home_url('/blog'); ?>" <?php if(is_home()||is_singular('post')) echo 'class="ativo"'; ?>>Blog</a></li>
     <li><a href="<?php echo home_url('/contato'); ?>" <?php if(is_page('contato')) echo 'class="ativo"'; ?>>Contato</a></li>
-    <li><a href="<?php echo home_url('/doacao'); ?>" class="btn-doar">Faça uma Doação</a></li>
+    <li class="mobile-doar"><a href="<?php echo home_url('/doacao'); ?>" class="btn-doar">Faça uma Doação</a></li>
   </ul>
+  <a href="<?php echo home_url('/doacao'); ?>" class="btn-doar nav-donation">Faça uma Doação</a>
   <button class="nav-mobile" id="navBtn" aria-label="Menu">☰</button>
 </nav>
