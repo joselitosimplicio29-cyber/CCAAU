@@ -37,6 +37,26 @@ function ccaau_body_classes($classes) {
 }
 add_filter('body_class', 'ccaau_body_classes');
 
+// Força os templates do tema nas páginas principais, mesmo se a página tiver template do Elementor selecionado.
+function ccaau_forcar_templates_do_tema($template) {
+    if (is_page('sobre')) {
+        $sobre_template = get_template_directory() . '/page-sobre.php';
+        if (file_exists($sobre_template)) {
+            return $sobre_template;
+        }
+    }
+
+    if (is_page('projetos')) {
+        $projetos_template = get_template_directory() . '/page-projetos.php';
+        if (file_exists($projetos_template)) {
+            return $projetos_template;
+        }
+    }
+
+    return $template;
+}
+add_filter('template_include', 'ccaau_forcar_templates_do_tema', 99);
+
 // Excluir categoria 'transparencia' do blog principal
 function ccaau_excluir_transparencia_do_blog($query) {
     if ($query->is_home() && $query->is_main_query()) {
