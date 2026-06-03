@@ -569,3 +569,85 @@ nav{
   .sobre-brands-box{padding:18px 12px}
   .sobre-cta-v2{border-radius:14px;margin-left:5%;margin-right:5%;padding:28px 20px}
 }
+
+/* SOBRE OBRA */
+.obra-page{background:linear-gradient(180deg,#fff 0%,#fbfaf5 54%,#fff 100%);padding-bottom:30px}
+.obra-hero{display:grid;grid-template-columns:42% 58%;min-height:560px;background:#004b36;overflow:hidden}
+.obra-hero-copy{position:relative;z-index:2;padding:90px 8% 70px;color:#fff;display:flex;flex-direction:column;justify-content:center}
+.obra-hero-copy::after{content:'';position:absolute;top:-10%;right:-110px;width:230px;height:120%;background:#004b36;border-radius:0 100% 100% 0;z-index:-1;box-shadow:40px 0 80px rgba(0,0,0,.22)}
+.obra-pill{display:inline-flex;align-items:center;width:max-content;border:1px solid var(--laranja);border-radius:8px;color:#f8bd4e;font-size:13px;font-weight:900;letter-spacing:.08em;text-transform:uppercase;padding:9px 15px;margin-bottom:34px;background:rgba(0,0,0,.08)}
+.obra-pill::before{content:'';width:9px;height:9px;border-radius:50%;background:var(--laranja);margin-right:9px}
+.obra-hero h1{font-family:'Montserrat',sans-serif;font-size:clamp(38px,5vw,66px);line-height:1.13;font-weight:800;letter-spacing:-.02em;margin-bottom:24px}
+.obra-hero h1 span{color:var(--laranja)}
+.obra-hero p{font-size:18px;line-height:1.8;color:rgba(255,255,255,.94);max-width:570px;margin-bottom:34px}
+.obra-hero-btn{display:inline-flex;width:max-content;align-items:center;justify-content:center;min-height:56px;padding:15px 28px;border:1px solid rgba(234,162,54,.9);border-radius:8px;color:#fff;text-decoration:none;font-weight:800;background:rgba(255,255,255,.04)}
+.obra-hero-photo{min-height:560px}
+.obra-hero-photo img{width:100%;height:100%;object-fit:cover;display:block}
+.obra-main{max-width:1260px;margin:0 auto;padding:56px 5% 30px;display:grid;grid-template-columns:1.55fr .85fr;gap:44px}
+.obra-kicker{display:flex;align-items:center;gap:13px;color:var(--laranja);font-weight:900;text-transform:uppercase;letter-spacing:.16em;font-size:13px;margin-bottom:18px}
+.obra-kicker::before{content:'';width:11px;height:11px;border-radius:50%;background:var(--laranja)}
+.obra-content h2{font-family:'Montserrat',sans-serif;color:var(--verde);font-size:clamp(28px,3vw,38px);line-height:1.2;margin-bottom:22px}
+.obra-content p{font-size:16px;line-height:1.82;color:var(--texto);margin-bottom:18px}
+.obra-progress{margin-top:34px;padding-top:28px;border-top:1px solid #ded8cc}
+.obra-steps{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;position:relative;margin:28px 0 22px}
+.obra-steps::before{content:'';position:absolute;top:31px;left:8%;right:8%;height:2px;background:#e3dfd6;z-index:0}
+.obra-step{position:relative;z-index:1;text-align:center}
+.obra-step span{width:64px;height:64px;border-radius:50%;background:#f1f0eb;color:#8b8b8b;display:flex;align-items:center;justify-content:center;font-weight:900;margin:0 auto 12px;border:6px solid #fbfaf5}
+.obra-step-done span{background:var(--verde);color:#fff}
+.obra-step-active span{background:#fff2d8;color:var(--laranja)}
+.obra-step strong{display:block;color:var(--texto);font-size:14px;margin-bottom:6px}
+.obra-step small{display:block;color:#5f6b64;font-size:12px}
+.obra-progress-bar{height:18px;background:#e7ece7;border:1px solid #d0d8d0;border-radius:999px;overflow:hidden;display:inline-block;width:70%;vertical-align:middle}
+.obra-progress-bar span{display:block;height:100%;background:var(--verde);border-radius:999px}
+.obra-progress-label{display:inline-block;margin-left:18px;color:var(--texto);font-size:18px}
+.obra-gallery-section{margin-top:38px}
+.obra-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.obra-gallery article img{width:100%;height:180px;object-fit:cover;border-radius:10px;display:block;margin-bottom:12px}
+.obra-gallery article strong{display:block;color:var(--texto);font-size:15px;margin-bottom:4px}
+.obra-gallery article span{font-size:13px;color:var(--cinza)}
+.obra-sidebar{background:linear-gradient(135deg,#e8f0e6 0%,#f8faf6 100%);border-radius:16px;padding:38px 36px;height:max-content;display:flex;flex-direction:column;gap:30px}
+.obra-info{display:grid;grid-template-columns:54px 1fr;gap:18px;align-items:start}
+.obra-info span{width:46px;height:46px;border-radius:50%;background:#fff;color:var(--verde);border:1px solid rgba(30,77,59,.14);display:flex;align-items:center;justify-content:center;font-weight:900}
+.obra-info strong{display:block;color:var(--texto);font-size:15px;margin-bottom:7px}
+.obra-info p{font-size:15px;line-height:1.62;color:var(--texto)}
+.obra-bottom{max-width:1260px;margin:0 auto;padding:0 5% 30px;display:flex;justify-content:flex-end}
+.obra-note{width:300px;background:linear-gradient(135deg,#fff4df,#fff);border-radius:12px;border:1px solid #f4dfbd;padding:34px 28px}
+.obra-note-icon{color:var(--laranja);font-size:32px;font-weight:900;margin-bottom:20px}
+.obra-note h3{font-family:'Montserrat',sans-serif;color:var(--verde);font-size:25px;line-height:1.25;margin-bottom:12px}
+.obra-note p{font-size:15px;line-height:1.65;color:var(--texto)}
+.obra-cta{max-width:1280px;margin:0 auto;padding:34px 36px;display:grid;grid-template-columns:80px minmax(260px,1fr) auto;gap:26px;align-items:center;background:linear-gradient(135deg,#004b36,#0b674b);border-radius:20px;color:#fff;box-shadow:0 16px 38px rgba(0,57,39,.2)}
+.obra-cta-icon{font-size:58px;color:#f6b63e;line-height:1}
+.obra-cta h2{font-family:'Montserrat',sans-serif;font-size:30px;line-height:1.2;margin-bottom:8px}
+.obra-cta p{font-size:16px;line-height:1.65;color:rgba(255,255,255,.9)}
+.obra-cta-actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:flex-end}
+.obra-btn-donate,.obra-btn-outline{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:15px 26px;border-radius:8px;text-decoration:none;font-weight:800;white-space:nowrap}
+.obra-btn-donate{background:var(--laranja);color:#fff}
+.obra-btn-outline{background:rgba(255,255,255,.04);color:#fff;border:1px solid rgba(234,162,54,.85)}
+
+@media(max-width:1100px){
+  .obra-hero{grid-template-columns:1fr}
+  .obra-hero-copy{padding:66px 5% 46px}
+  .obra-hero-copy::after{display:none}
+  .obra-hero-photo{min-height:360px}
+  .obra-main{grid-template-columns:1fr}
+  .obra-steps{grid-template-columns:repeat(3,1fr);row-gap:22px}
+  .obra-steps::before{display:none}
+  .obra-bottom{justify-content:stretch}
+  .obra-note{width:100%}
+  .obra-cta{grid-template-columns:1fr;text-align:center}
+  .obra-cta-icon{margin:0 auto}
+  .obra-cta-actions{justify-content:center}
+}
+
+@media(max-width:640px){
+  .obra-hero h1{font-size:36px}
+  .obra-hero p{font-size:16px}
+  .obra-hero-btn{width:100%}
+  .obra-steps,.obra-gallery{grid-template-columns:1fr}
+  .obra-progress-bar{width:100%;display:block}
+  .obra-progress-label{margin:12px 0 0}
+  .obra-sidebar{padding:26px 20px}
+  .obra-cta{border-radius:14px;margin-left:5%;margin-right:5%;padding:28px 20px}
+  .obra-cta-actions{flex-direction:column}
+  .obra-btn-donate,.obra-btn-outline{width:100%}
+}
