@@ -95,13 +95,6 @@
     </article>
   </section>
 
-  <section class="sobre-partners-v2">
-    <h2>Parceiros que acreditam e caminham conosco</h2>
-    <div class="sobre-brands-box">
-      <img src="<?php echo esc_url($tmpl_dir . '/assets/images/barra-de-marcas.jpg'); ?>" alt="Lei Rouanet, ENGIE, CCAAU, Ministério da Cultura e Governo do Brasil">
-    </div>
-  </section>
-
   <section class="sobre-cta-v2">
     <div class="sobre-cta-icon">♡</div>
     <div>
