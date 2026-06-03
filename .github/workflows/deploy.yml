@@ -1,0 +1,36 @@
+name: Deploy CCAAU Tema WordPress
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Deploy via SSH para VPS
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            CONTAINER="wordpress-l8ev-wordpress-1"
+            THEME_PATH="/var/www/html/wp-content/themes/ccaau-tema"
+            TEMP_PATH="/tmp/ccaau-tema-deploy"
+
+            # Clona ou atualiza o repositório temporariamente
+            if [ -d "$TEMP_PATH" ]; then
+              cd $TEMP_PATH && git pull origin main
+            else
+              git clone https://github.com/joselitosimplicio29-cyber/CCAAU.git $TEMP_PATH
+            fi
+
+            # Copia os arquivos para dentro do container
+            docker cp $TEMP_PATH/. $CONTAINER:$THEME_PATH/
+
+            echo "Deploy concluído com sucesso!"
